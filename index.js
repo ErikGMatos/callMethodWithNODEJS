@@ -6,7 +6,7 @@ const app = express();
 app.get("/", function(req, res) {
     axios
         .get(
-            "url/UnidadeAprendizagem/TesteIntegracao"
+            "https://api.movidesk.com/public/v1/tickets?token=7ba6f07f-3e99-4d0d-b988-222759dde6b1&id=1"
         )
         .then(response => res.send(response.data))
         .catch(function(error) {
